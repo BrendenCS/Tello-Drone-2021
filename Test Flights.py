@@ -53,8 +53,14 @@ def square():
 # Triangle
 def triangle():
     for i in range(3):
-        sendmsg("forward 100",8)
+        sendmsg("forward 100",6)
         sendmsg("cw 120")
+
+# 360
+def threesixty():
+    sendmsg("up 50")
+    for i in range(10):
+        sendmsg("ccw 360")
 
 
 
@@ -73,7 +79,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        triangle()
+        threesixty()
 
         sendmsg('land')
 
