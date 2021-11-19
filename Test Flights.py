@@ -30,7 +30,7 @@ def recv():
             break
 
 
-def sendmsg(msg, sleep = 7):
+def sendmsg(msg, sleep = 6):
     print("Sending: " + msg)
     msg = msg.encode(encoding="utf-8")
     sock.sendto(msg, tello_address)
@@ -50,6 +50,13 @@ def square():
         sendmsg("forward 100")
         sendmsg("ccw 90")
 
+# Triangle
+def triangle():
+    for i in range(3):
+        sendmsg("forward 100",8)
+        sendmsg("cw 120")
+
+
 
 print("\nBrenden Krueger")
 print("Program Name: Test Flight")
@@ -66,7 +73,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        square()
+        triangle()
 
         sendmsg('land')
 
