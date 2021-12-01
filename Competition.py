@@ -18,7 +18,6 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 sock.bind(locaddr)
 
-
 def recv():
     count = 0
     while True:
@@ -44,16 +43,28 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 def firstHoop():
-    for
+    sendmsg("up 100")
+    sendmsg("forward 200")
+
 
 """
 # def secondHoop():
-
+      
 
 # def thirdHoop():
     
     
 # def fourthHop(): 
+
+
+#D8DE1F
+
+    sendmsg("up 100")
+    sendmsg("forward 40")
+    sendmsg("ccw 90")
+    sendmsg("forward 50")
+    sendmsg(cw 90")
+    
 """
 
 print("\nTeam: Krueger and Jacobs")
@@ -71,8 +82,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        firstHoop()
 
         sendmsg('land')
 
