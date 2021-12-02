@@ -44,12 +44,12 @@ recvThread.start()
 
 def firstHoop():
     sendmsg("up 100")
-    sendmsg("forward 200")
-
+    sendmsg("forward 300")
 
 """
-# def secondHoop():
-      
+def secondHoop():
+     sendmsg("up 100")
+     sendmsg("forward 100")
 
 # def thirdHoop():
     
@@ -57,14 +57,7 @@ def firstHoop():
 # def fourthHop(): 
 
 
-#D8DE1F
-
-    sendmsg("up 100")
-    sendmsg("forward 40")
-    sendmsg("ccw 90")
-    sendmsg("forward 50")
-    sendmsg(cw 90")
-    
+#D8DE1F    
 """
 
 print("\nTeam: Krueger and Jacobs")
